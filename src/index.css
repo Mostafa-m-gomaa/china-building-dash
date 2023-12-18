@@ -1,0 +1,17 @@
+body {
+  background: rgb(58,91,180);
+background: linear-gradient(90deg, rgba(58,91,180,1) 0%, rgba(252,69,69,1) 100%);
+  /* margin: 0; */
+  font-family: 'Alkalami', serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Carter One', cursive;
+  font-family: 'El Messiri', sans-serif;
+  font-family: 'Kalam', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Poor Story', cursive;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+
+

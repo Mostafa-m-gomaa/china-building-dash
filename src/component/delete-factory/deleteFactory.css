@@ -1,0 +1,68 @@
+.delete-factory {
+  width: 70%;
+  padding: 10px 20px;
+  background-color: #fcfcfb;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .delete-factory {
+    width: 95%;
+    padding: 6px;
+    margin: auto;
+  }
+}
+.delete-factory h1 {
+  text-align: center;
+}
+.delete-factory form {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.delete-factory form select {
+  margin-left: 51px;
+  height: 34px;
+  text-transform: capitalize;
+  width: 265px;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .delete-factory form select {
+    width: 70%;
+  }
+}
+.delete-factory form select option {
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.delete-factory form button {
+  width: 200px;
+  padding: 9px;
+  background-color: yellow;
+  border: none;
+  font-weight: 800;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.delete-factory form button:hover {
+  background-color: black;
+  color: yellow;
+}
+.delete-factory form label {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.delete-factory form label input {
+  margin-left: 30px;
+  height: 24px;
+  width: 308px;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 4px;
+  border: 1px solid;
+}/*# sourceMappingURL=deleteFactory.css.map */

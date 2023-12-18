@@ -1,0 +1,84 @@
+@import "../helpers/mixins";
+.add-factory{
+    width: 70%;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    background-color: #fcfcfb;
+    border-radius: 15px;
+    @include media(mopile){
+             
+        width: 95%;
+        padding: 6px;
+      
+  }
+    h1{
+        text-align: center;
+    }
+    form{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        @include media(mopile){
+             
+           margin: auto;
+            
+          
+      }
+
+        button{
+            width: 200px;
+    padding: 9px;
+    background-color: yellow;
+    border: none;
+    font-weight: 800;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: black;
+        color: yellow;
+    }
+        }
+        label{
+            font-size: 18px;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            select{
+                margin-left: 30px;
+                height: 24px;
+                width: 308px;
+                font-size: 15px;
+                text-transform: capitalize;
+                padding: 4px;
+                
+                border: 1px solid;
+                @include media(mopile){
+             
+                    width: 70%;
+                    
+                  
+              }
+            }
+            input{
+                margin-left: 30px;
+                height: 24px;
+                width: 308px;
+                font-size: 15px;
+                text-transform: capitalize;
+                padding: 4px;
+                
+                border: 1px solid;
+                @include media(mopile){
+             
+                    width: 70%;
+                    
+                  
+              }
+            
+            }
+        }
+    }
+}

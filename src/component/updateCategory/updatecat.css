@@ -1,0 +1,60 @@
+.update-category {
+  width: 70%;
+  overflow-y: scroll;
+  padding: 10px 20px;
+  background-color: #fcfcfb;
+  border-radius: 15px;
+}
+.update-category h1 {
+  text-align: center;
+}
+.update-category form {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.update-category form select {
+  margin-left: 51px;
+  height: 34px;
+  text-transform: capitalize;
+  width: 265px;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+.update-category form select option {
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+.update-category form button {
+  width: 200px;
+  padding: 9px;
+  background-color: yellow;
+  border: none;
+  font-weight: 800;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.update-category form button:hover {
+  background-color: black;
+  color: yellow;
+}
+.update-category form label {
+  font-size: 18px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.update-category form label input {
+  margin-left: 30px;
+  height: 24px;
+  width: 308px;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 4px;
+  border: 1px solid;
+}/*# sourceMappingURL=updatecat.css.map */

@@ -1,0 +1,178 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Alkalami', serif;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Carter One', cursive;
+  font-family: 'El Messiri', sans-serif;
+  font-family: 'Kalam', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Poor Story', cursive;
+  font-family: 'Sofia Sans', sans-serif;
+  overflow: hidden;
+  width: 85%;
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0, 0, 0, 0.671);
+  border-radius: 20px;
+  padding: 25px;
+}
+.App .burger{
+  width: 30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 7px;
+  margin:  0 auto 15px;
+  display: none;
+  transition: 0.2;
+}
+
+.inside-app{
+  width: 85%;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+::-webkit-scrollbar{
+  height: 12px;
+  width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track{
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+  background: skyblue;
+  border-radius: 1ex;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit
+  }
+
+.spin-cont{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 2, 2, 0.541);
+  z-index: 300;
+ 
+}
+
+
+  .spinner {
+    width: 100px;
+    height: 100px;
+    background-color: #e00101;
+    margin: auto;
+  
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+
+  .success{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    right: 200px;
+    top: 200px;
+    background-color: rgb(13, 163, 223);
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 50%;
+    padding: 20px;
+
+  }
+  .success svg{
+    fill: green;
+  }
+  .wrong{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    right: 200px;
+    top: 200px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 25px;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    z-index: 300;
+
+  }
+ .wrong svg{
+    fill: rgb(238, 6, 6);
+    font-size: 100px;
+  }
+
+
+
+  @media (max-width:767px){
+    .App{
+      flex-direction: column;
+      padding: 25px 15px;
+      
+    }
+    .App .burger{
+    display: block;
+     
+    }
+    .success ,.wrong{
+      right: 22%;
+      width: 120px;
+      height: 120px;
+      font-size: 20px;
+    }
+
+    .wrong svg ,
+    .success svg{
+     
+      font-size: 60px;
+    }
+  }

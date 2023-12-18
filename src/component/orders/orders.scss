@@ -1,0 +1,49 @@
+@import "../helpers/mixins";
+.orders{
+    width: 70%;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    background-color: #fcfcfb;
+    border-radius: 15px;
+    @include media(mopile){
+             
+        width: 95%;
+        padding: 6px;
+      
+  }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h2{
+            margin: 0;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+        .order{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: rgb(208, 209, 219);
+            padding: 15px;
+            border-radius: 15px;
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+        }
+       
+        .top{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+           font-size: 18px;
+           text-transform: capitalize;
+        }
+
+    }
+}
